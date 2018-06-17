@@ -1,0 +1,10 @@
+
+
+<h1> 학교이름 : {{school.name}}</h1>
+<h3> 학교 설명 : {{school.description}}</h3>
+
+{% for student in school.student_set.all %}
+    <p>학생이름 : {{student}}</p>
+{% endfor %}
+
+
